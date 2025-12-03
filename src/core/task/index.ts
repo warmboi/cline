@@ -511,7 +511,6 @@ export class Task {
 		if (currentProvider === "openai" && apiConfiguration.openAiBaseUrl) {
 			openAiCompatibleDomain = extractProviderDomainFromUrl(apiConfiguration.openAiBaseUrl)
 		}
-
 		if (historyItem) {
 			// Open task from history
 			telemetryService.captureTaskRestarted(this.ulid, currentProvider, openAiCompatibleDomain)

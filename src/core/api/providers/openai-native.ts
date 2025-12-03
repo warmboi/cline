@@ -14,7 +14,7 @@ import { getOpenAIToolParams, ToolCallProcessor } from "../transform/tool-call-p
 
 interface OpenAiNativeHandlerOptions extends CommonApiHandlerOptions {
 	openAiNativeApiKey?: string
-	openAiBaseUrl?: string
+	openAiNativeBaseUrl?: string
 	reasoningEffort?: string
 	apiModelId?: string
 }
@@ -35,7 +35,7 @@ export class OpenAiNativeHandler implements ApiHandler {
 			try {
 				this.client = new OpenAI({
 					apiKey: this.options.openAiNativeApiKey,
-					baseURL: this.options.openAiBaseUrl,
+					baseURL: this.options.openAiNativeBaseUrl,
 					fetch, // Use configured fetch with proxy support
 				})
 			} catch (error: any) {

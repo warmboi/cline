@@ -107,6 +107,7 @@ export interface ApiHandlerOptions {
 	vertexProjectId?: string
 	vertexRegion?: string
 	openAiBaseUrl?: string
+	openAiNativeBaseUrl?: string
 	ollamaBaseUrl?: string
 	ollamaApiOptionsCtxNum?: string
 	lmStudioBaseUrl?: string
