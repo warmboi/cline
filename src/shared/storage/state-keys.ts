@@ -74,6 +74,7 @@ export interface Settings {
 	vertexRegion: string | undefined
 	requestyBaseUrl: string | undefined
 	openAiBaseUrl: string | undefined
+	openAiNativeBaseUrl: string | undefined
 	openAiHeaders: Record<string, string>
 	ollamaBaseUrl: string | undefined
 	ollamaApiOptionsCtxNum: string | undefined
